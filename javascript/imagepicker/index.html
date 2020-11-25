@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Image Picker</title>
+      <script>
+         function pilih(){
+            let list_hewan = document.getElementById("hewan");
+            let idx = list_hewan.selectedIndex;
+            let area_gambar = document.getElementById("gambar");
+            area_gambar.src = "image/" + list_hewan[idx].value + ".jpg";
+            alert ("Ini Hewan " + list_hewan[idx].value + jpg );
+            }
+      </script>
+  </head>
+  <body>
+     <center>
+      <form id="frm1">
+         <b> Pilih hewan : </b> 
+         <select id="hewan" onchange="pilih()">
+            <option value="beruang">Beruang</option>
+            <option value="gajah">Gajah</option>
+            <option value="harimau">Harimau</option>
+            <option value="kelinci">Kelinci</option>
+            <option value="kucing">Kucing</option>
+            <option value="singa">Singa</option>
+         </select>
+      </form>
+     <br><br>
+     <img   src="image/beruang.jpg" alt="Gambar Beruang" id="gambar" width="70%" border="1px">
+   </center>
+  </body>
+</html>

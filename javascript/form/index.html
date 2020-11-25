@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Form Validation</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: beige;
+            text-align: center;
+        }
+    </style>
+    <table>
+       <form id="form">
+           Nama : 
+           <br>
+           <input type="text" required="" maxlength="30" placeholder="masukan nama anda" id="nama" name="nama">
+           <br>
+           Email : <br>
+           <input type="email" required="" placeholder="masukan email anda" id="email" name="email">
+           <br>
+           Jam Keberangkatan : <br>
+           <input type="text" required="" placeholder="jam Keberangkatan" id="jam" name="jam">
+           <br>
+           Tujuan : <br>
+           <input type="text" placeholder="tujuan" id="tujuan" name="tujuan">
+           <br>
+           Jumlah Tiket :<br>
+           <input type="number" min="1" max="10" placeholder="jumlah tiket" id="tiket" name="tiket"><br><br>
+           <button type="submit" ><b>Submit</b></button> 
+      </form>
+   </table>
+</body>
+</html>
